@@ -22,6 +22,27 @@ namespace ProgramExe
             {
                 WriteLine("vertex is {0}", ver);
             }
+
+            g.addEdge("A", "B");
+            g.addEdge("A", "C");
+            g.addEdge("A", "D");
+            g.addEdge("C", "D");
+            g.addEdge("C", "G");
+            g.addEdge("D", "G");
+            g.addEdge("D", "H");
+            g.addEdge("B", "E");
+            g.addEdge("B", "F");
+            g.addEdge("E", "I");
+
+
+            foreach (KeyValuePair<string, List<string>> ele in g.adtices)
+            {
+                WriteLine("edge key is {0} -->", ele.Key);
+                foreach (string item in ele.Value)
+                {
+                    WriteLine("{0}", item);
+                }
+            }
         }
     }
 }
