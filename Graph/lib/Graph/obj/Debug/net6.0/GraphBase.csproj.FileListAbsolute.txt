@@ -1,0 +1,12 @@
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.csproj.AssemblyReference.cache
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.GeneratedMSBuildEditorConfig.editorconfig
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.AssemblyInfoInputs.cache
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.AssemblyInfo.cs
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.csproj.CoreCompileInputs.cache
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/bin/Debug/net6.0/GraphBase.deps.json
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/bin/Debug/net6.0/GraphBase.dll
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/bin/Debug/net6.0/ref/GraphBase.dll
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/bin/Debug/net6.0/GraphBase.pdb
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.dll
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/ref/GraphBase.dll
+/home/wangzhx/github/Algorithm/Graph/lib/Graph/obj/Debug/net6.0/GraphBase.pdb

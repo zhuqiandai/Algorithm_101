@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "index/1.0.0": {
+        "dependencies": {
+          "GraphBase": "1.0.0"
+        },
+        "runtime": {
+          "index.dll": {}
+        }
+      },
+      "GraphBase/1.0.0": {
+        "runtime": {
+          "GraphBase.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "index/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GraphBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
