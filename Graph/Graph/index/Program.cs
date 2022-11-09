@@ -7,20 +7,13 @@ namespace ProgramExe
     {
         public static void Main()
         {
-
             Graph g = new Graph();
 
             List<string> myVertices = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I" };
 
-
             foreach (string ver in myVertices)
             {
                 g.addVertex(ver);
-            }
-
-            foreach (string ver in g.vertices)
-            {
-                WriteLine("vertex is {0}", ver);
             }
 
             g.addEdge("A", "B");
@@ -35,13 +28,29 @@ namespace ProgramExe
             g.addEdge("E", "I");
 
 
-            foreach (KeyValuePair<string, List<string>> ele in g.adtices)
+            // // print vertex
+            // foreach (string ver in g.vertices)
+            // {
+            //     WriteLine("vertex is {0}", ver);
+            // }
+
+            // // print adtice
+            // foreach (KeyValuePair<string, List<string>> ele in g.adtices)
+            // {
+            //     WriteLine("edge key is {0} -->", ele.Key);
+            //     foreach (string item in ele.Value)
+            //     {
+            //         WriteLine("{0}", item);
+            //     }
+            // }
+
+            // Graph.BFS(g, "A");
+            Graph.DFS(g);
+
+            // print color
+            foreach (KeyValuePair<string, Graph.VerColor> ele in g.colors)
             {
-                WriteLine("edge key is {0} -->", ele.Key);
-                foreach (string item in ele.Value)
-                {
-                    WriteLine("{0}", item);
-                }
+                WriteLine($"edge color key is {ele.Key} and color is {ele.Value}");
             }
         }
     }
