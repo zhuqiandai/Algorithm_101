@@ -1,3 +1,10 @@
+/**
+ *  使用哨兵
+ * @param list
+ * @param start
+ * @param pivot
+ * @param end
+ */
 function merge(list: Array<number>, start: number, pivot: number, end: number) {
     const lindex = pivot - start + 1
     const rindex = end - pivot
@@ -43,3 +50,5 @@ const list = [2, 4, 5, 7, 1, 2, 3, 6]
 mergeSort(list, 0, list.length - 1)
 
 console.log('merge sort result ', list)
+
+export {}
