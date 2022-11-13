@@ -21,13 +21,7 @@ function merge(list: Array<number>, start: number, pivot: number, end: number) {
     let k = start
 
     while (k <= end) {
-        if (l[i] <= r[j]) {
-            list[k] = l[i]
-            i += 1
-        } else {
-            list[k] = r[j]
-            j += 1
-        }
+        l[i] < r[j] ? (list[k] = l[i++]) : (list[k] = r[j++])
 
         k += 1
     }

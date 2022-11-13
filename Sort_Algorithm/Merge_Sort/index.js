@@ -1,7 +1,4 @@
 function merge(list, start, pivot, end) {
-    if (list.length <= 1) {
-        return;
-    }
     var lindex = pivot - start + 1;
     var rindex = end - pivot;
     var l = [];
@@ -12,18 +9,13 @@ function merge(list, start, pivot, end) {
     for (var i_2 = 1; i_2 <= rindex; i_2++) {
         r[i_2] = list[pivot + i_2];
     }
+    // l[lindex + 1] = Infinity
+    // r[rindex + 1] = Infinity
     var i = 1;
     var j = 1;
     var k = start;
     while (k <= end) {
-        if (l[i] <= r[j]) {
-            list[k] = l[i];
-            i += 1;
-        }
-        else {
-            list[k] = r[j];
-            j += 1;
-        }
+        l[i] < r[j] ? (list[k] = l[i++]) : (list[k] = r[j++]);
         k += 1;
     }
 }
