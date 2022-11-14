@@ -8,7 +8,7 @@ import {swap} from "../../lib/swap";
 
 const left = (i: number) => 2 * i + 1
 const right = (i: number) => 2 * i + 2
-const parent = (i: number) => Math.floor(i / 2)
+const parent = (i: number) => Math.floor((i -1 ) / 2)
 
 function maxHeapify(A: number[], i: number, s: number) {
     const l = left(i)
@@ -27,6 +27,31 @@ function maxHeapify(A: number[], i: number, s: number) {
     if (max !== i) {
         swap(A, i, max)
         maxHeapify(A, max, s)
+    }
+}
+
+function heapExactMax(A: number[]) {
+    if (A.length < 1) {
+       throw "can't"
+    }
+
+    const size = A.length - 1
+
+    swap(A, 0, size)
+    maxHeapify(A, 0, size)
+
+    return A.pop()
+}
+
+function heapInsertKey(A: number[], k: number, i: number) {
+    if (A[i] > k) {
+        throw "don't need"
+    }
+
+    const p = parent(i)
+    while (i > 0 && A[p] < A[i]) {
+        swap(A, p, i)
+        i = p
     }
 }
 
@@ -53,6 +78,12 @@ const A = [
     3, 1, 9, 4, 7,
     8, 2, 10, 14, 16
 ]
-heapSort(A)
+
+buildMax(A)
+
+heapInsertKey(A, 6, 7)
+heapInsertKey(A, 6, 7)
+heapInsertKey(A, 6, 7)
+heapInsertKey(A, 6, 7)
 
 console.log("A: ", A)
