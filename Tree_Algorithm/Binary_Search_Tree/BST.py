@@ -1,0 +1,2 @@
+class BST(object):
+    pass

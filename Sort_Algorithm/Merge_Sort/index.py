@@ -1,9 +1,5 @@
 # 2022.11.17
 
-def swap(list, a, b):
-    list[a], list[b] = list[b], list[a]
-
-
 def merge(list, left, mid, right):
     llen = mid - left + 1
     rlen = right - mid
