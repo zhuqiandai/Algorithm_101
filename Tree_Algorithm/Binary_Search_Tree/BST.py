@@ -1,2 +1,0 @@
-class BST(object):
-    pass

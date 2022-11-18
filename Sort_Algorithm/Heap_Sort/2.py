@@ -1,7 +1,4 @@
-# 2022.11.17
-
-class Heap(object):
-
+class Heap():
     def __init__(self) -> None:
         self.data = []
 
@@ -17,47 +14,44 @@ class Heap(object):
     def parent(self, i):
         return i // 2
 
-    def maxHeapify(self, i, pointer):
+    def max_heapify(self, i, pointer):
         lidx = self.left(i)
         ridx = self.right(i)
 
         max = 0
+        d = self.data
 
-        if lidx < pointer and self.data[lidx] > self.data[i]:
+        if lidx < pointer and d[lidx] > d[i]:
             max = lidx
         else:
             max = i
 
-        if ridx < pointer and self.data[ridx] > self.data[max]:
+        if ridx < pointer and d[ridx] > d[max]:
             max = ridx
 
         if max != i:
-            swap(self.data, max, i)
-            self.maxHeapify(max, pointer)
-
-    def insert(self, ele):
-        pass
+            swap(d, i, max)
+            self.max_heapify(max, pointer)
 
     def build_max_heap(self):
-        pointer = self.size()
-        non_leaf = len(self.data) // 2
+        node = self.size() // 2
 
-        i = non_leaf
+        i = node
+        p = self.size() - 1
         while i >= 0:
-            self. maxHeapify(i, pointer)
+            self.max_heapify(i, p)
             i -= 1
 
-    def heap_sort(self, pointer):
+    def heap_sort(self):
         self.build_max_heap()
 
-        i = pointer
-        while i > 0:
-            swap(self.data, 0, i)
-            self.maxHeapify(0, i)
-            i -= 1
+        d = self.data
+        p = self.size() - 1
 
-    def priority_queue():
-        pass
+        while p > 0:
+            swap(d, 0, p)
+            self.max_heapify(0, p)
+            p -= 1
 
 
 def swap(list, a, b):
@@ -78,7 +72,6 @@ if __name__ == '__main__':
     heap.data.append(8)
     heap.data.append(7)
 
-    pointer = heap.size() - 1
-    heap.heap_sort(pointer)
+    heap.heap_sort()
 
     print("build max heap", heap.data)
