@@ -102,7 +102,7 @@ class BST(object):
             self.transplant(node, node.left)
 
         else:
-            k == self.minimum(node.right)
+            k = self.minimum(node.right)
             if node.val != k:
                 pass
 
