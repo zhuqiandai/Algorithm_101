@@ -1,0 +1,28 @@
+{
+  "name": "algorithm_101",
+  "version": "1.0.0",
+  "description": "Algorithm Notes",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuqiandai/Algorithm_101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuqiandai/Algorithm_101/issues"
+  },
+  "homepage": "https://github.com/zhuqiandai/Algorithm_101#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0"
+  }
+}
